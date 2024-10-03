@@ -48,11 +48,11 @@ class _MyAppState extends State<MyApp> {
               child: ListView(
                 padding: EdgeInsets.zero,
                 children: <Widget>[
-                  DrawerHeader(
+                  const DrawerHeader(
                     decoration: BoxDecoration(
                       color: Color.fromARGB(255, 254, 80, 0),
                     ),
-                    child: const Text(
+                    child: Text(
                       'Siperindo',
                       style: TextStyle(
                         color: Colors.white,
@@ -120,7 +120,7 @@ class _MyAppState extends State<MyApp> {
                         },
                       ),
                       ListTile(
-                        title: const Text('Pake Murah'),
+                        title: const Text('Paket Murah'),
                         onTap: () {
                           Navigator.pop(context); // Menutup drawer
                           _controller.loadRequest(Uri.parse(
